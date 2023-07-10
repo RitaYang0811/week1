@@ -4,15 +4,129 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Castoro&display=swap"
+      rel="stylesheet"
+    />
     <title>index</title>
   </head>
   <body>
-    <%- include('./layout/header'); -%>
-
-    <h1 class="index-title">我是首頁</h1>
-    <img src="../assets/images/cat.jpg" style="width: 300px;" alt="cat">
-
-    <%- include('./layout/footer'); -%>
+    <header>
+      <div class="container">
+        <h1 class="h1">VITO</h1>
+        <img
+          src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week1/vito.png?raw=true"
+          alt="vito-pic"
+          class="vito-pic col-6"
+        />
+        <h3 class="h1 text-align-right">RESUME</h3>
+      </div>
+      <div class="bg-gray mb-80">
+        <div class="container">
+          <p class="col-6 ml-a fs-1">
+            I'm Vito, a UI Designer with 5+ years of experience. I create
+            visually appealing interfaces for web and mobile apps. Proficient in
+            Sketch, Adobe XD, Figma, HTML, CSS, and JavaScript. I enjoy
+            collaborating with others to create high-quality products.
+          </p>
+        </div>
+      </div>
+      <div class="container">
+        <div class="info col-6">
+          <h2 class="h2 info-title mb-16">Vito Evens</h2>
+          <ul class="vito fs-2 mb-40">
+            <li class="mb-8">
+              <a href="#">456 Walnut Avenue, Someville, USA</a>
+            </li>
+            <li class="mb-8">
+              <a href="tel:+1 123 456 7890">+1 123 456 7890</a>
+            </li>
+            <li class="mb-8">
+              <a href="mailto:info@hexschool.com">info@hexschool.com</a>
+            </li>
+            <li><a href="www.infohexschool.com">www.infohexschool.com</a></li>
+          </ul>
+          <h2 class="h2 info-title mb-16">Education</h2>
+          <ul class="education mb-40">
+            <li class="mb-16">
+              <p class="year fs-3 gray">2014-2018</p>
+              <p class="info-txt fs-2">
+                Bachelor of Science in Business Administration, University of
+                California, Los Angeles
+              </p>
+            </li>
+            <li class="mb-16">
+              <p class="year fs-3 gray">2012-2014</p>
+              <p class="info-txt fs-2">
+                Associate of Arts in Graphic Design, San Francisco State
+                University
+              </p>
+            </li>
+            <li class="mb-16">
+              <p class="year fs-3 gray">2008-2012</p>
+              <p class="info-txt fs-2">
+                High School Diploma, Lincoln High School
+              </p>
+            </li>
+          </ul>
+          <h2 class="h2 info-title mb-16">Work</h2>
+          <ul class="work mb-40">
+            <li class="mb-16">
+              <p class="year fs-3 gray">2018-2021</p>
+              <p class="info-txt fs-2">Marketing Manager, ABC Company</p>
+            </li>
+            <li class="mb-16">
+              <p class="year fs-3 gray">2016-2018</p>
+              <p class="info-txt fs-2">Sales Associate, XYZ Corporation</p>
+            </li>
+            <li class="mb-16">
+              <p class="year fs-3 gray">2014-2016</p>
+              <p class="info-txt fs-2">Sales Associate, XYZ Corporation</p>
+            </li>
+          </ul>
+          <h2 class="h2 info-title mb-16">Awards</h2>
+          <ul class="awards mb-40">
+            <li class="fs-2 mb-12">
+              Best in Show Award, National Advertising Awards, 2020
+            </li>
+            <li class="fs-2 mb-12">
+              Honorable Mention, International Design Competition, 2019
+            </li>
+            <li class="fs-2 mb-12">
+              People's Choice Award, Local Art Exhibition, 2018
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <footer class="bg-black">
+      <ul class="social d-flex">
+        <li>
+          <a href="#"
+            ><img
+              src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week1/line.png?raw=true"
+              alt="line"
+          /></a>
+        </li>
+        <li>
+          <a href="#"
+            ><img
+              src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week1/fb.png?raw=true"
+              alt="fb"
+          /></a>
+        </li>
+        <li>
+          <a href="#"
+            ><img
+              src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week1/instagram.png?raw=true"
+              alt="ig"
+          /></a>
+        </li>
+      </ul>
+    </footer>
 
     <script type="module" src="../main.js"></script>
   </body>
