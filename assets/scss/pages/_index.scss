@@ -16,7 +16,7 @@ img {
   height: auto;
   display: block;
 }
-header {
+main {
   padding: 160px 0;
 }
 footer {
@@ -46,8 +46,10 @@ footer {
 .fs-3 {
   font-size: 20px;
 }
+// 記得要看好設計稿，有斜體樣式使用font-style:italic;
 .gray {
   color: #949494;
+  font-style: italic;
 }
 // 背景
 .bg-gray {
@@ -100,8 +102,17 @@ footer {
   color: #ae0000;
   border-bottom: 3px solid #ae0000;
 }
-
+.info-txt {
+  color: #000;
+}
+//footer不用使用flex排版,將圖片改為行內元素，即可置中
 .social {
-  justify-content: center;
-  gap: 40px;
+  text-align: center;
+  // justify-content: center;
+  // gap: 40px;
+  img {
+    display: inline;
+    width: 64px;
+    margin: 0 20px;
+  }
 }
