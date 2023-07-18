@@ -13,11 +13,11 @@
     />
 
     <title>index</title>
-    <script type="module" crossorigin src="/week1/assets/index-d0211afb.js"></script>
-    <link rel="stylesheet" href="/week1/assets/index-95f18e53.css">
+    <script type="module" crossorigin src="/week1/assets/index-73a06973.js"></script>
+    <link rel="stylesheet" href="/week1/assets/index-6292ff51.css">
   </head>
   <body>
-    <header>
+    <main>
       <div class="container">
         <h1 class="h1">VITO</h1>
         <img
@@ -37,9 +37,10 @@
           </p>
         </div>
       </div>
+      <!-- 整體大標也可以使用ul>li 但子層的ul>li顏色會繼承父層，子層顏色需更改-->
       <div class="container">
-        <div class="info col-6">
-          <h2 class="h2 info-title mb-16">Vito Evens</h2>
+        <ul class="info col-6">
+          <li class="h2 info-title mb-16">Vito Evens</h2>
           <ul class="vito fs-2 mb-40">
             <li class="mb-8">
               <a href="#">456 Walnut Avenue, Someville, USA</a>
@@ -52,7 +53,7 @@
             </li>
             <li><a href="www.infohexschool.com">www.infohexschool.com</a></li>
           </ul>
-          <h2 class="h2 info-title mb-16">Education</h2>
+          <li class="h2 info-title mb-16">Education</h2>
           <ul class="education mb-40">
             <li class="mb-16">
               <p class="year fs-3 gray">2014-2018</p>
@@ -75,7 +76,7 @@
               </p>
             </li>
           </ul>
-          <h2 class="h2 info-title mb-16">Work</h2>
+          <li class="h2 info-title mb-16">Work</h2>
           <ul class="work mb-40">
             <li class="mb-16">
               <p class="year fs-3 gray">2018-2021</p>
@@ -92,24 +93,31 @@
               </p>
             </li>
           </ul>
-          <h2 class="h2 info-title mb-16">Awards</h2>
+          <li class="h2 info-title mb-16">Awards</h2>
           <ul class="awards">
-            <li class="fs-2 mb-12">
+            <li class="info-txt fs-2 mb-12">
               Best in Show Award, National Advertising Awards, 2020
             </li>
-            <li class="fs-2 mb-12">
+            <li class=" info-txt fs-2 mb-12">
               Honorable Mention, International Design Competition, 2019
             </li>
-            <li class="fs-2 mb-12">
+            <li class=" info-txt fs-2 mb-12">
               People's Choice Award, Local Art Exhibition, 2018
             </li>
           </ul>
         </div>
       </div>
-    </header>
+    </main>
+    <!-- 此footer區塊不用使用flex排版 -->
     <footer class="bg-black">
-      <ul class="social d-flex">
-        <li>
+      <div class="social ">
+        <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week1/line.png?raw=true"
+        alt="line" >
+        <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week1/fb.png?raw=true"
+        alt="fb">
+        <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week1/instagram.png?raw=true"
+        alt="ig" >
+        <!-- <li>
           <a href="#"
             ><img
               src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week1/line.png?raw=true"
@@ -129,7 +137,7 @@
               src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week1/instagram.png?raw=true"
               alt="ig"
           /></a>
-        </li>
+        </li> -->
       </ul>
     </footer>
 
